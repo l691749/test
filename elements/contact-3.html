@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- Fonts -->
+    	<!-- Open Sans -->
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
+    	<!-- Icon Font - Font Awesome -->
+    	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+	<!-- Stylesheets -->
+		<!-- Custom -->
+        <link href="css/style-allec.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>	
+    <![endif]-->
+</head>
+<body>
+    
+    <div id="page" class="page">
+        
+        <div class="block" id="contact-3">
+            <section class="container">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="bordered-container">
+                            <div class="form-error alert alert-danger">
+                                <span class="alert-market">
+                                    <i class="fa fa-ban"></i>
+                                </span>
+                                <div class="form-error__holder"></div>
+
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>
+                            </div>
+                
+                            <div class="form-handler">
+
+                                
+
+                                <form class="contact contact--clean" id="contact-form-2" name="contact-form" method="post" action="js/send.php" novalidate>
+                                    <h3 class="heading-helper heading-helper--large editContent">drop us a line</h3>
+                                    
+                                    <input class="contact__field" name="contact-name" type="text" placeholder="full name">
+                                    <input class="contact__field" name="contact-email" type="email" placeholder="email">
+                                    <textarea class="contact__field contact__area" name="contact-message" placeholder="message"></textarea>
+                                    <button class="btn btn--decorated btn-warning btn-submit" type="submit">Send Message</button>
+                                </form>
+                            </div>
+                        </div><!-- borderec container -->
+                    </div><!-- end col -->
+
+                    <div class="col-sm-6">
+                        <div class="bordered-container">
+                            <div id='map' class="map map--standart"></div>
+                        </div><!-- borderec container -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </section><!-- end container -->
+        </div>
+    
+    </div><!-- /#page -->
+
+    <!-- Load JS here for greater good =============================-->
+		<!-- jQuery 1.10.1--> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<!-- Bootstrap 3--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <!-- Modernizr -->
+        <script src="external/modernizr/modernizr.custom.js"></script>
+        <!--*** Google map  ***-->
+        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <!-- Form -->
+        <script src="js/form.js"></script>        
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                 initMap(".map--standart");
+            });
+        </script>
+</body>
+</html>

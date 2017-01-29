@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- Fonts -->
+    	<!-- Open Sans -->
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
+    	<!-- VarelaRound -->
+    	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    	<!-- Icon Font - Font Awesome -->
+    	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+	<!-- Stylesheets -->
+		<!-- Custom -->
+        <link href="css/style-allec.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>	
+    <![endif]-->
+</head>
+<body>
+    
+    <div id="page" class="page">
+        
+        <div class="block" id="tab-6">
+            <div class="container">
+                <div class="tabs-custom tabs-style-topline">
+                  <nav>
+                    <ul>
+                      <li class="first-tab"><a href="#section-topline-1" class=""><i class="fa fa-home"></i><span class="editContent">Home</span></a></li>
+                      <li><a href="#section-topline-2" class=""><i class="fa fa-user"></i><span class="editContent">profile</span></a></li>
+                      <li><a href="#section-topline-3" class=""><i class="fa fa-files-o"></i><span class="editContent">attachments</span></a></li>
+                      <li><a href="#section-topline-4" class=""><i class="fa fa-briefcase"></i><span class="editContent">projects</span></a></li>
+                      <li class="last-tab"><a href="#section-topline-5" class=""><i class="fa fa-cogs"></i><span class="editContent">settings</span></a></li>
+                    </ul>
+                  </nav>
+                  <div class="content-wrap">
+                    <section id="section-topline-1">
+                      <p class="editContent">Duis aliquet ligula non risus sollicitudin commodo. Donec ullamcorper lacinia turpis at aliquet. Cras consectetur fermentum erat, in placerat ligula pharetra eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+
+                      <p class="editContent">Aliquam dolor nisi, fermentum at vulputate in, aliquam id justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. </p>
+                    </section>
+                    <section id="section-topline-2">
+                      <p class="editContent">Aliquam dolor nisi, fermentum at vulputate in, aliquam id justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. </p>
+                      
+                      <p class="editContent">Duis aliquet ligula non risus sollicitudin commodo. Donec ullamcorper lacinia turpis at aliquet. Cras consectetur fermentum erat, in placerat ligula pharetra eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                    </section>
+                    <section id="section-topline-3">
+                      <p class="editContent">Cras consectetur fermentum erat, in placerat ligula pharetra eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Aliquam dolor nisi, fermentum at vulputate in, aliquam id justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. </p>
+                      
+                      <p class="editContent">Duis aliquet ligula non risus sollicitudin commodo. Donec ullamcorper lacinia turpis at aliquet. </p>
+                    </section>
+                    <section id="section-topline-4">
+                      <p class="editContent"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. </p>
+                      
+                      <p class="editContent">Duis aliquet ligula non risus sollicitudin commodo. Donec ullamcorper lacinia turpis at aliquet.  Aliquam dolor nisi, fermentum at vulputate in, aliquam id justo. Cras consectetur fermentum erat, in placerat ligula pharetra eget.</p>
+                    </section>
+                    <section id="section-topline-5">
+                      <p class="editContent">Duis aliquet ligula non risus sollicitudin commodo. Donec ullamcorper lacinia turpis at aliquet. </p>
+
+                      <p class="editContent">Cras consectetur fermentum erat, in placerat ligula pharetra eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Aliquam dolor nisi, fermentum at vulputate in, aliquam id justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. </p>
+                    </section>
+                  </div><!-- /content -->
+                </div><!-- /tabs -->       
+            </div>
+        </div>
+    
+    </div><!-- /#page -->
+
+    <!-- jQuery 1.10.1--> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- Tabs interaction -->
+    <script src="external/tabs/cbpFWTabs.js"></script>
+    <!-- Custom -->
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).ready(function() {
+        (function() {
+          [].slice.call( document.querySelectorAll( '.tabs-custom' ) ).forEach( function( el ) {
+            new CBPFWTabs( el );
+          });
+        })();
+      });
+    </script>
+
+</body>
+</html>

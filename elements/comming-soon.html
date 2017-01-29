@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Comming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- Fonts -->
+    	<!-- Open Sans -->
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
+    	<!-- VarelaRound -->
+    	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    	<!-- Icon Font - Font Awesome -->
+    	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+	<!-- Stylesheets -->
+		<!-- Custom -->
+        <link href="css/style-allec.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>	
+    <![endif]-->
+</head>
+<body>
+    
+    <div id="page" class="page">
+        
+        <div id="comming-soon">
+            <div class="comming bg">
+               <div class="">
+               <h2 class="comming__header comming__header-start">our website</h2>
+               <h3 class="comming__header">is coming very soon</h3>
+               <p class="comming__describe">We promise you!</p>
+               </div>
+
+                <div class="couter">
+                    <div class="timer-wrap help-color">
+                        <span class="digits"></span>
+                        <input class="timer-input day">
+                        <div class="digits-label">days</div>
+                    </div>
+                    <div class="timer-wrap help-color timer-wrap--hour">
+                        <span class="digits"></span>
+                        <input class="timer-input hour">
+                        <div class="digits-label">hours</div>
+                    </div>
+                    <div class="timer-wrap help-color timer-wrap--min">
+                        <span class="digits"></span>
+                        <input class="timer-input minute">
+                        <div class="digits-label">minutes</div>
+                    </div>
+                    <div class="timer-wrap help-color timer-wrap--sec">
+                        <span class="digits"></span>
+                        <input class="timer-input second">
+                        <div class="digits-label">seconds</div>
+                    </div>
+                </div>
+            </div><!--end comming -->
+        </div>
+    
+    </div><!-- /#page -->
+
+        <!-- jQuery 1.10.1--> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <!-- Modernizr -->
+        <script src="external/modernizr/modernizr.custom.js"></script>
+        <!-- Count comimg soon -->
+        <script src="external/count/count.down.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                count(".comming");           
+            });
+        </script>
+
+</body>
+</html>
